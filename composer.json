@@ -1,0 +1,32 @@
+{
+    "name": "patrickmwangi017/laravel-calendar",
+    "description": "Laravel helper for FullCalendar.io",
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "patrickmwangi017",
+            "email": "mwangipatrick017@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/support": "~7.0|~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Patrickmwangi017\\LaravelCalendar\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Patrickmwangi017\\LaravelCalendar\\ServiceProvider"
+            ],
+            "aliases": {
+                "Calendar": "Patrickmwangi017\\LaravelCalendar\\Facades\\Calendar"
+            }
+        }
+    },
+    "minimum-stability": "stable"
+}
